@@ -1,8 +1,9 @@
 <h1 align="center"><a href="https://www.inf.ufrgs.br/~mwalter/hairaging/">A Biologically Inspired Hair Aging Model</a></h1>
 
 <p align="center">  
-      <img src =./agingSimulation.gif >  
+      <img src =https://user-images.githubusercontent.com/31601033/226077728-ecf7b64d-ef13-4a12-aaaf-8c01366f0b4f.jpg >  
  </p>  
+
 
 <p align="center">
 	In ACM Transactions on Graphics (Proceedings of SIGGRAPH ASIA 2022)
@@ -22,7 +23,7 @@
  ## Installation
   To install the plugin, follow these steps:
 
-  1. Clone this repository.
+  1. Download the latest release of our plugin.
   2. Copy the plugin directory into Unreal Engine's Plugins folder, which should be located at `\Engine\Plugins`
   3. Enable the plugin in your project's Plugins settings.
       
@@ -46,9 +47,10 @@ If the plugin is installed and enabled, the interface can be accessed inside Unr
 The interface is where the user can set different parameters such as defining the aging rate - from early greyer to late greyer, the aging pattern - female or male, and also choose to use the default segmentation or to automatically create a new one from a normal map given as input.
          
 <p align="center">  
-      <img src =https://user-images.githubusercontent.com/31601033/226062798-ff9e7483-b5a2-4108-b2a4-be25beae6ee3.png >  
+      <img src =https://user-images.githubusercontent.com/31601033/226077701-2846ee9f-dc78-4e7f-b5c5-f770b139ba5a.png >  
  </p>  
-      
+
+  
       
 When the user selects the `Create Hair Aging Material Instance` option, an instance of the aging material will be created in the project folder, which will have the aging parameters calculated based upon the settings defined by the user. 
       
@@ -85,7 +87,7 @@ More specifically, **two** aging material instances will be created, `MI_HairAgi
  where:
       
       
-- `Beta1`: variable defined in the original formulation for hair aging in our paper, influences the hair aging rate. Can be manually adjusted to allow for a faster or slower aging rate in all hairs.
+- `Beta1`: variable defined in the original formulation for hair aging in our paper, influences the hair aging rate. Can be manually adjusted to allow for aster or slower aging rate in all hairs.
 - `GreyAmount`: describes the ratio Grey/White hairs, or the percentage of hairs that will turn grey instead of white.
 - `GreyDesatAmount, WhiteDesatAmount`: The desaturation percentage for grey/white hairs.
 - `GreyMaxMelanin, WhiteMaxMelanin` : The maximum amount of melanin a grey/white hair should have.
@@ -120,6 +122,12 @@ More specifically, **two** aging material instances will be created, `MI_HairAgi
       <p align="center">  
       Fig.5 - Setting the hair groom component.
        </p>
+       
+## Contact
+ If you have any question or feedbacks regarding our plugin, please feel free to contact me at arthur.balbao@inf.ufrgs.br
+<p align="center">  
+      <img src =./agingSimulation.gif >  
+ </p>  
 
  ## Citation  
 ```bibtex
