@@ -1,7 +1,9 @@
 <h1 align="center"><a href="https://www.inf.ufrgs.br/~mwalter/hairaging/">A Biologically Inspired Hair Aging Model</a></h1>
-<p align="center">
-![Teaser](./agingSimulation.gif)
-  </p>
+
+<p align="center">  
+      <img src =./agingSimulation.gif >  
+ </p>  
+
 <p align="center">
 	In ACM Transactions on Graphics (Proceedings of SIGGRAPH ASIA 2022)
     <br />
