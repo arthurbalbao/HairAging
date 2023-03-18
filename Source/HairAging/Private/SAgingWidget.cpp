@@ -130,7 +130,7 @@ void SAgingWidget::Construct(const FArguments& InArgs)
 			.VAlign(VAlign_Top)
 			[
 				SNew(STextBlock)
-				.Text(FText::FromString("Hair Aging Scale"))
+				.Text(FText::FromString("Hair Aging Rate"))
 				.ToolTipText(FText::FromString("Defines the hair aging rate, from early to late greying"))
 			]
 		+ SHorizontalBox::Slot()
