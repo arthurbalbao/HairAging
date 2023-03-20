@@ -8,7 +8,7 @@
 <p align="center">
 	In ACM Transactions on Graphics (Proceedings of SIGGRAPH ASIA 2022)
     <br />
-    <a href=""><strong>Arthur Balbao</strong></a>  <a href=https://www.inf.ufrgs.br/~mwalter/"><strong>Marcelo Walter</strong></a>
+    <a href=""><strong>Arthur Balbao</strong></a>  <a href=https://wiki.inf.ufrgs.br/Marcelo_Walter><strong>Marcelo Walter</strong></a>
   </p>
 
   
@@ -49,6 +49,9 @@ The interface is where the user can set different parameters such as defining th
 <p align="center">  
       <img src =https://user-images.githubusercontent.com/31601033/226077701-2846ee9f-dc78-4e7f-b5c5-f770b139ba5a.png >  
  </p>  
+ <p align="center">  
+      Fig.1 - Our In-Editor interface.
+       </p>
 
   
       
@@ -60,18 +63,18 @@ More specifically, **two** aging material instances will be created, `MI_HairAgi
       <img src =https://user-images.githubusercontent.com/31601033/226065275-9df22635-424d-4d69-9224-b563af3063c0.png>
       </p>
       <p align="center">  
-      Fig.1 - Example of Material Instance generated for character named Hudson.
+      Fig.2 - Example of Material Instance generated for character named Hudson.
        </p>
 
  If the user chooses to use a custom baked normal map to generate a more accurate segmentation, it is only required to check the `Use Custom Normal Map for Segmentation` checkbox and then to browse for the normal map. If the image is successfully selected, the new material instances generated will already account for the segmentation based upon the custom normal map. When the custom segmentation is chosen, a new texture will also be created under `\HairAging\CharacterName\Segmentation\`, which displays the resulting segmentation. 
       
- **Note**: Only *2048x2048* baked normal maps are accepted in order to avoid artifacts during the segmentation process.
+ **Note**: Only *2048x2048* baked normal maps are accepted in order to avoid artifacts during the segmentation process. Also, the normal map **must** be baked in *object space*. 
      
 <p align="center">  
       <img src = https://user-images.githubusercontent.com/31601033/226066721-49a16125-5a32-44b6-aeb7-4e703cd47b1e.png>
       </p>
       <p align="center">  
-      Fig.2 - Example of segmentation created using a custom normal map.
+      Fig.3 - Example of segmentation created using a custom normal map.
        </p>
       
 ### Hair Aging Materials
@@ -82,13 +85,13 @@ More specifically, **two** aging material instances will be created, `MI_HairAgi
       <img src =https://user-images.githubusercontent.com/31601033/226068711-992c515b-4e2c-4af8-ac5e-69a946a81bb6.png>
       </p>
       <p align="center">  
-      Fig.3 - Hair aging material parameters.
+      Fig.4 - Hair aging material parameters.
        </p>
  where:
       
       
-- `Beta1`: variable defined in the original formulation for hair aging in our paper, influences the hair aging rate. Can be manually adjusted to allow for aster or slower aging rate in all hairs.
-- `GreyAmount`: describes the ratio Grey/White hairs, or the percentage of hairs that will turn grey instead of white.
+- `Beta1`: influences the hair aging rate. Can be manually adjusted to allow for faster or slower aging rate in all hairs.
+- `GreyAmount`: describes the grey/white hairs ratio, or the percentage of hairs that will turn grey instead of white.
 - `GreyDesatAmount, WhiteDesatAmount`: The desaturation percentage for grey/white hairs.
 - `GreyMaxMelanin, WhiteMaxMelanin` : The maximum amount of melanin a grey/white hair should have.
 - `GreyMinMelanin, WhiteMinMelanin` : The minimum amount of melanin a grey/white hair should have.
@@ -103,14 +106,14 @@ More specifically, **two** aging material instances will be created, `MI_HairAgi
       <img src =https://user-images.githubusercontent.com/31601033/226070633-7d997abc-b579-4f42-b0e1-b9276a211a57.png>
       </p>
       <p align="center">  
-      Fig.4 - Adding an aging component.
+      Fig.5 - Adding an aging component.
        </p>
 
  Each aging component has the following parameters:
       
  - `Anim Duration`: defines, in seconds, how long the simulation should last.
  - `Init Age`: The initial age of the subject, default 20 years.
- - `Final Age`: The final age at the end of the simulation, default 100.
+ - `Final Age`: The final age at the end of the simulation, default 100 years.
  - `Init Thinning`: The initial hair thickness value, default 100%, or no thinning.      
  - `Final Thinning`: The final hair thickness, default 0.4, or 60% thinning.
       
@@ -120,11 +123,11 @@ More specifically, **two** aging material instances will be created, `MI_HairAgi
       <img src =https://user-images.githubusercontent.com/31601033/226071253-0a078fb9-72c2-4e7a-b4f7-c834f63a1e48.png>
       </p>
       <p align="center">  
-      Fig.5 - Setting the hair groom component.
+      Fig.6 - Setting the hair groom component.
        </p>
        
 ## Contact
- If you have any question or feedbacks regarding our plugin, please feel free to contact me at arthur.balbao@inf.ufrgs.br
+ If you have any questions or feedback regarding our plugin, please feel free to contact me at arthur.balbao@inf.ufrgs.br
 <p align="center">  
       <img src =./agingSimulation.gif >  
  </p>  
